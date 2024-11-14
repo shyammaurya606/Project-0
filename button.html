@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Styles Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f7fa;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    /* Base button style */
+    .btn {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    /* Button variations */
+    .btn-primary {
+      background: #007bff;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #0056b3;
+    }
+    .btn-success {
+      background: #28a745;
+      color: white;
+    }
+    .btn-success:hover {
+      background: #1e7e34;
+    }
+    .btn-danger {
+      background: #dc3545;
+      color: white;
+    }
+    .btn-danger:hover {
+      background: #a71d2a;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #333;
+      color: #333;
+    }
+    .btn-outline:hover {
+      background: #333;
+      color: white;
+    }
+    .btn-rounded {
+      background: #6f42c1;
+      color: white;
+      border-radius: 30px;
+    }
+    .btn-rounded:hover {
+      background: #502d84;
+    }
+    .btn-shadow {
+      background: #17a2b8;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .btn-shadow:hover {
+      background: #117a8b;
+    }
+    .btn-disabled {
+      background: #adb5bd;
+      color: #f1f1f1;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Practice: Different Button Styles</h1>
+  <p style="text-align:center;">Here are examples of various types of buttons with CSS styling:</p>
+
+  <div class="btn-container">
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-success">Success Button</button>
+    <button class="btn btn-danger">Danger Button</button>
+    <button class="btn btn-outline">Outline Button</button>
+    <button class="btn btn-rounded">Rounded Button</button>
+    <button class="btn btn-shadow">Shadow Button</button>
+    <button class="btn btn-disabled" disabled>Disabled Button</button>
+  </div>
+</body>
+</html>
