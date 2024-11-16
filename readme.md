@@ -1,5 +1,6 @@
 # 🚀 Web Projects Collection
-
+THIS IS MY FIRST PROJECT WHAT I HAVE BUILD., 
+![alt text](image.png)
 This repository contains three small frontend projects built with **HTML**, **CSS**, and **JavaScript**.  
 
 Included projects:
