@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<style>
+  body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif; }
+  #calculator { border: 2px solid #333; padding: 20px; border-radius: 10px; }
+  input { width: 100%; padding: 10px; margin-bottom: 10px; font-size: 1.5em; text-align: right; }
+  button { width: 50px; height: 50px; margin: 5px; font-size: 1.2em; }
+</style>
+</head>
+<body>
+
+<div id="calculator">
+  <input type="text" id="display" disabled>
+  <div>
+    <button>7</button><button>8</button><button>9</button><button>/</button>
+    <button>4</button><button>5</button><button>6</button><button>*</button>
+    <button>1</button><button>2</button><button>3</button><button>-</button>
+    <button>0</button><button>.</button><button>=</button><button>+</button>
+    <button id="clear">C</button>
+  </div>
+</div>
+
+<script>
+const display = document.getElementById('display');
+document.querySelectorAll('#calculator button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const val = btn.textContent;
+    if(val === 'C') display.value = '';
+    else if(val === '=') {
+      try { display.value = eval(display.value); } catch { display.value = 'Error'; }
+    } else display.value += val;
+  });
+});
+</script>
+
+</body>
+</html>
+
+## have to update the code
