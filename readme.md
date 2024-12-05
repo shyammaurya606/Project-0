@@ -4,8 +4,12 @@ THIS IS MY FIRST PROJECT WHAT I HAVE BUILD.,
 This repository contains three small frontend projects built with **HTML**, **CSS**, and **JavaScript**.  
 
 Included projects:
-1. 🏋️ **Fitness Club Landing Page**  
-2. 🎯 **Guess the Number Game**  
-3. 🔘 **Button Styles Practice**  
+🏋️ Fitness Club Landing Page
+A simple landing page for a fitness club, featuring navigation, hero section, and call-to-action buttons.
 
+🎯 Guess the Number Game
+A fun number guessing game where the user tries to guess a randomly generated number with hints.
+
+🔘 Button Styles Practice
+Practice with different button styles, hover effects, and animations using CSS.
 ---
