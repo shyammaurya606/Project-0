@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Color Changer</title>
+<style>
+  body { display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh; font-family: Arial, sans-serif; transition: background-color 0.3s; }
+  button { padding: 10px 20px; font-size: 1em; margin-bottom: 20px; }
+  #colorCode { font-size: 1.5em; }
+</style>
+</head>
+<body>
+
+<button id="changeColor">Change Background</button>
+<div id="colorCode">#ffffff</div>
+
+<script>
+const btn = document.getElementById('changeColor');
+const colorText = document.getElementById('colorCode');
+
+function randomColor() {
+  const hex = '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6,'0');
+  document.body.style.backgroundColor = hex;
+  colorText.textContent = hex;
+}
+
+btn.addEventListener('click', randomColor);
+</script>
+
+</body>
+</html>
