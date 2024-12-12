@@ -15,4 +15,8 @@ Practice with different button styles, hover effects, and animations using CSS.
 
 🧮 Calculator
 A basic calculator that supports addition, subtraction, multiplication, and division with a simple interface.
+
+🎨 Background Color Changer
+Click a button to generate a random background color and display its hex code. Includes a smooth transition effect.
+
 ---
