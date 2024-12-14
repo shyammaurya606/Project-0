@@ -19,4 +19,6 @@ A basic calculator that supports addition, subtraction, multiplication, and divi
 🎨 Background Color Changer
 Click a button to generate a random background color and display its hex code. Includes a smooth transition effect.
 
+⏰ Digital Clock
+Shows real-time hours, minutes, and seconds. Includes a dark/light theme toggle.
 ---
