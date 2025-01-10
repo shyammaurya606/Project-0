@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Picker</title>
+<style>
+  body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif; flex-direction: column; }
+  #colorBox { width: 200px; height: 200px; margin-top: 20px; border: 2px solid #333; }
+</style>
+</head>
+<body>
+
+<h3>Color Picker Tool</h3>
+<input type="color" id="picker">
+<div id="colorBox"></div>
+<div id="hex" style="margin-top:10px; font-weight:bold;"></div>
+
+<script>
+const picker = document.getElementById('picker');
+const box = document.getElementById('colorBox');
+const hexText = document.getElementById('hex');
+
+picker.addEventListener('input', () => {
+  box.style.backgroundColor = picker.value;
+  hexText.textContent = picker.value;
+});
+</script>
+
+</body>
+</html>
