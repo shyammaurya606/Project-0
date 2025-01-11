@@ -32,4 +32,4 @@ A multiple-choice quiz that tracks your score and shows the result at the end.
 ⚖️ BMI Calculator
 Calculates Body Mass Index (BMI) and displays the category: Underweight, Normal, Overweight, or Obese.
 
---  -  
+---  
