@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+<style>
+  body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif; background: #e8f5e9; flex-direction: column; }
+  input, button { padding: 10px; margin: 5px; width: 200px; }
+  #timer { font-size: 2em; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<h3>Countdown Timer</h3>
+<input type="number" id="seconds" placeholder="Enter seconds">
+<button id="start">Start</button>
+<div id="timer">00:00</div>
+
+<script>
+let interval;
+document.getElementById('start').addEventListener('click', () => {
+  clearInterval(interval);
+  let time = parseInt(document.getElementById('seconds').value);
+  if(isNaN(time) || time <= 0) { document.getElementById('timer').textContent = "Enter valid seconds!"; return; }
+  interval = setInterval(() => {
+    let min = Math.floor(time / 60).toString().padStart(2,'0');
+    let sec = (time % 60).toString().padStart(2,'0');
+    document.getElementById('timer').textContent = `${min}:${sec}`;
+    if(time-- <= 0) clearInterval(interval);
+  }, 1000);
+});
+</script>
+
+</body>
+</html>
