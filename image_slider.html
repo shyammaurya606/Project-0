@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider</title>
+<style>
+  body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif; background: #fafafa; }
+  #slider { width: 400px; position: relative; }
+  img { width: 100%; border-radius: 10px; }
+  button { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; padding: 10px; cursor: pointer; }
+  #prev { left: 10px; }
+  #next { right: 10px; }
+</style>
+</head>
+<body>
+
+<div id="slider">
+  <img id="slide" src="https://via.placeholder.com/400x200?text=Image+1" alt="Slide">
+  <button id="prev">&#10094;</button>
+  <button id="next">&#10095;</button>
+</div>
+
+<script>
+const images = [
+  "https://via.placeholder.com/400x200?text=Image+1",
+  "https://via.placeholder.com/400x200?text=Image+2",
+  "https://via.placeholder.com/400x200?text=Image+3"
+];
+let index = 0;
+const slide = document.getElementById('slide');
+
+document.getElementById('next').addEventListener('click', () => {
+  index = (index + 1) % images.length;
+  slide.src = images[index];
+});
+document.getElementById('prev').addEventListener('click', () => {
+  index = (index - 1 + images.length) % images.length;
+  slide.src = images[index];
+});
+</script>
+
+</body>
+</html>
