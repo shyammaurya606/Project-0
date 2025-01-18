@@ -37,4 +37,6 @@ Lets users pick a color and shows the chosen color in a box along with its hex c
 ⏱️ Countdown Timer
 Counts down from a user-specified number of seconds. Displays time in minutes and seconds.
 
+🖼️ Image Slider / Carousel
+Rotates through multiple images automatically or using navigation buttons.
 ---    
