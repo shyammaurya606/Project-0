@@ -40,5 +40,6 @@ Counts down from a user-specified number of seconds. Displays time in minutes an
 🖼️ Image Slider / Carousel
 Rotates through multiple images automatically or using navigation buttons.
 
-
+⚖️ BMI Calculator
+Calculates Body Mass Index (BMI) and displays the category: Underweight, Normal, Overweight, or Obese.
   
