@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tip Calculator</title>
+<style>
+  body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #e0f7fa; }
+  #calculator { background: #fff; padding: 20px; border-radius: 10px; width: 300px; }
+  input { width: 100%; padding: 10px; margin: 5px 0; }
+  button { width: 100%; padding: 10px; margin-top: 10px; }
+  #result { margin-top: 10px; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<div id="calculator">
+  <h3>Tip Calculator</h3>
+  <input type="number" id="bill" placeholder="Bill Amount ($)">
+  <input type="number" id="tipPercent" placeholder="Tip (%)">
+  <input type="number" id="people" placeholder="Number of People">
+  <button id="calculate">Calculate Tip</button>
+  <div id="result"></div>
+</div>
+
+<script>
+document.getElementById('calculate').addEventListener('click', () => {
+  const bill = parseFloat(document.getElementById('bill').value);
+  const tipPercent = parseFloat(document.getElementById('tipPercent').value);
+  const people = parseInt(document.getElementById('people').value);
+
+  if(isNaN(bill) || isNaN(tipPercent) || isNaN(people) || people <= 0) {
+    document.getElementById('result').textContent = "Please enter valid numbers!";
+    return;
+  }
+
+  const totalTip = bill * tipPercent / 100;
+  const total = bill + totalTip;
+  const perPerson = total / people;
+
+  document.getElementById('result').textContent = `Total Tip: $${totalTip.toFixed(2)} | Total: $${total.toFixed(2)} | Per Person: $${perPerson.toFixed(2)}`;
+});
+</script>
+
+</body>
+</html>
