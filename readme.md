@@ -47,6 +47,7 @@ Calculates Body Mass Index (BMI) and displays the category: Underweight, Normal,
 
 🔐 Password Generator
 Generates a random secure password with customizable length.
-
+ 
+ 
 🗣️ Random Quote Generator
 Displays a random motivational quote from a predefined list when clicking a button.
