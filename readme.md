@@ -1,4 +1,5 @@
 
+
    # 🚀 Web Projects Collection
 THIS IS MY FIRST PROJECT WHAT I HAVE BUILD., 
 
@@ -24,8 +25,10 @@ Click a button to generate a random background color and display its hex code. I
 ⏰ Digital Clock
 Shows real-time hours, minutes, and seconds. Includes a dark/light theme toggle.
 
+
 📝 Quiz App
 A multiple-choice quiz that tracks your score and shows the result at the end.
+
 
 📝 simple portfolio page
 
