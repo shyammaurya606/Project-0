@@ -12,6 +12,7 @@ Included projects:
 🏋️ Fitness Club Landing Page
 A simple landing page for a fitness club, featuring navigation, hero section, and call-to-action buttons.
 
+
 🎯 Guess the Number Game
 A fun number guessing game where the user tries to guess a randomly generated number with hints.
 
