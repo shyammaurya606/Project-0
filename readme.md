@@ -4,13 +4,14 @@
 THIS IS MY FIRST PROJECT WHAT I HAVE BUILD., 
 
 
-![alt text](image.png)
+
 This repository contains three small frontend projects built with **HTML**, **CSS**, and **JavaScript**.  
 
 
 Included projects:
 🏋️ Fitness Club Landing Page
 A simple landing page for a fitness club, featuring navigation, hero section, and call-to-action buttons.
+![alt text](image.png)
 
 
 🎯 Guess the Number Game
