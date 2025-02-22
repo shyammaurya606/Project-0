@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App</title>
+<style>
+  body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #87ceeb; }
+  #weatherBox { background: #fff; padding: 20px; border-radius: 10px; text-align: center; width: 250px; }
+  input, button { width: 100%; padding: 10px; margin: 5px 0; }
+</style>
+</head>
+<body>
+
+<div id="weatherBox">
+  <h3>Weather App</h3>
+  <input type="text" id="city" placeholder="Enter city name">
+  <button id="getWeather">Get Weather</button>
+  <div id="result"></div>
+</div>
+
+<script>
+const data = {
+  "London": { temp: 15, desc: "Cloudy" },
+  "New York": { temp: 22, desc: "Sunny" },
+  "Tokyo": { temp: 18, desc: "Rainy" },
+  "Paris": { temp: 20, desc: "Clear" }
+};
+
+document.getElementById('getWeather').addEventListener('click', () => {
+  const city = document.getElementById('city').value;
+  if(data[city]) {
+    document.getElementById('result').textContent = `${city}: ${data[city].temp}°C, ${data[city].desc}`;
+  } else {
+    document.getElementById('result').textContent = "City not found in static data.";
+  }
+});
+</script>
+
+</body>
+</html>
