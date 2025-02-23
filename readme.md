@@ -20,7 +20,7 @@ A fun number guessing game where the user tries to guess a randomly generated nu
 
 🔘 Button Styles Practice
 Practice with different button styles, hover effects, and animations using CSS.
-
+![alt text](image-2.png)
 
 🧮 Calculator
 A basic calculator that supports addition, subtraction, multiplication, and division with a simple interface.
