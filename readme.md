@@ -24,6 +24,7 @@ Practice with different button styles, hover effects, and animations using CSS.
 
 🧮 Calculator
 A basic calculator that supports addition, subtraction, multiplication, and division with a simple interface.
+![alt text](image-3.png)
 
 
 🎨 Background Color Changer
