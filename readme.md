@@ -33,6 +33,7 @@ Click a button to generate a random background color and display its hex code. I
 ![alt text](image-4.png)
 
 
+
 ⏰ Digital Clock
 Shows real-time hours, minutes, and seconds. Includes a dark/light theme toggle.
 
