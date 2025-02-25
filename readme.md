@@ -29,6 +29,7 @@ A basic calculator that supports addition, subtraction, multiplication, and divi
 
 🎨 Background Color Changer
 Click a button to generate a random background color and display its hex code. Includes a smooth transition effect.
+![alt text](image-4.png)
 
 
 ⏰ Digital Clock
