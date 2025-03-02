@@ -55,6 +55,7 @@ Calculates Body Mass Index (BMI) and displays the category: Underweight, Normal,
 
 🎨 Color Picker Tool
 Lets users pick a color and shows the chosen color in a box along with its hex code.
+![alt text](image-8.png)
 
 
 ⏱️ Countdown Timer
