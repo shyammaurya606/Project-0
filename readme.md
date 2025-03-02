@@ -70,7 +70,7 @@ Rotates through multiple images automatically or using navigation buttons.
 
 ⚖️ BMI Calculator
 Calculates Body Mass Index (BMI) and displays the category: Underweight, Normal, Overweight, or Obese.
-
+![alt text](image-10.png)
 
 🔐 Password Generator
 Generates a random secure password with customizable length.
