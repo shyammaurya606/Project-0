@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz App</title>
-<style>
-  body { font-family: Arial, sans-serif; padding: 20px; }
-  button { margin: 5px 0; padding: 10px; width: 100%; }
-  #result { margin-top: 20px; font-weight: bold; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      margin: 5px 0;
+      padding: 10px;
+      width: 100%;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
 
-<h2>Quiz App</h2>
-<div id="quiz"></div>
-<div id="result"></div>
+  <h2>Quiz App</h2>
+  <div id="quiz"></div>
+  <div id="result"></div>
 
-<script>
-const quizData = [
-  { q: "What is 2+2?", options: ["3","4","5","6"], answer: "4" },
-  { q: "Capital of France?", options: ["Paris","Berlin","Rome","Madrid"], answer: "Paris" },
-  { q: "JS stands for?", options: ["Java","JavaScript","Json","JScript"], answer: "JavaScript" }
-];
+  <script>
+    const quizData = [
+      { q: "What is 2+2?", options: ["3", "4", "5", "6"], answer: "4" },
+      { q: "Capital of France?", options: ["Paris", "Berlin", "Rome", "Madrid"], answer: "Paris" },
+      { q: "JS stands for?", options: ["Java", "JavaScript", "Json", "JScript"], answer: "JavaScript" }
+    ];
 
-let current = 0, score = 0;
-const quizDiv = document.getElementById('quiz');
-const resultDiv = document.getElementById('result');
+    let current = 0, score = 0;
+    const quizDiv = document.getElementById('quiz');
+    const resultDiv = document.getElementById('result');
 
-function loadQuestion() {
-  if(current >= quizData.length) {
-    quizDiv.innerHTML = '';
-    resultDiv.textContent = `Your score: ${score}/${quizData.length}`;
-    return;
-  }
-  const q = quizData[current];
-  quizDiv.innerHTML = `<p>${q.q}</p>` + q.options.map(opt => `<button>${opt}</button>`).join('');
-  quizDiv.querySelectorAll('button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      if(btn.textContent === q.answer) score++;
-      current++;
-      loadQuestion();
-    });
-  });
-}
+    function loadQuestion() {
+      if (current >= quizData.length) {
+        quizDiv.innerHTML = '';
+        resultDiv.textContent = `Your score: ${score}/${quizData.length}`;
+        return;
+      }
+      const q = quizData[current];
+      quizDiv.innerHTML = `<p>${q.q}</p>` + q.options.map(opt => `<button>${opt}</button>`).join('');
+      quizDiv.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (btn.textContent === q.answer) score++;
+          current++;
+          loadQuestion();
+        });
+      });
+    }
 
-loadQuestion();
-</script>
+    loadQuestion();
+  </script>
 
 </body>
+
 </html>
